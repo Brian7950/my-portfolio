@@ -1,5 +1,76 @@
-*{
+:root {
+    --primaryFont-color:bisque;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
 }
+
+/*Header section*/
+header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 15px;
+
+}
+header h1{
+    text-shadow: 5px 4px 4px rgba(153, 152, 152, 0.8);
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--primaryFont-color);
+}
+
+/*Nav section in header section*/
+header nav ul li{
+    display: inline;
+    font-style: oblique;
+    padding:0 10px;
+    margin:0 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--primaryFont-color);
+}
+
+body{
+    background-color: #444444;
+}
+
+/* About me section*/
+.me-section{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    color:var(--primaryFont-color);
+
+}
+.my-pic{
+    padding-top: 20px;
+    padding-right: 15px;
+    height: 300px;
+    width: 200px;
+    overflow:hidden;
+    border-right-color: whitesmoke;
+    border-right-style: outset;
+}
+
+.my-pic img {
+    border-color: azure;
+    border-radius: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.me-section h2{
+    text-shadow: 5px 4px 5px rgba(153, 152, 152, 0.8);
+}
+
+
