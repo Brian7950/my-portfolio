@@ -42,35 +42,67 @@ body{
     background-color: #444444;
 }
 
-/* About me section*/
+/* About me section strip*/
 .me-section{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
     color:var(--primaryFont-color);
-
 }
+
 .my-pic{
-    padding-top: 20px;
-    padding-right: 15px;
+    padding: 30px;
+    margin-left: 35px;
     height: 300px;
-    width: 200px;
+    width: 250px;
     overflow:hidden;
-    border-right-color: whitesmoke;
-    border-right-style: outset;
+    border-right: 1px solid whitesmoke;
+    display: inline;
 }
 
 .my-pic img {
-    border-color: azure;
     border-radius: 400px;
     width: 100%;
-    object-fit: cover;
 }
 
-.me-section h2{
+/*general use for headers*/
+.title{
     text-shadow: 5px 4px 5px rgba(153, 152, 152, 0.8);
+    padding:5px;
+    border-bottom: 1px solid whitesmoke;
 }
+
+/*about me block*/
+.about-me-section{
+    text-align: center;
+    padding-left: 50px;
+    height: 250px;
+    width: 470px;
+    margin-top: 35px;
+}
+
+/*header section of about me */
+.about-me-section h2{
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+/*bottom half of about me section*/
+.about-me-section span{
+    padding-top:10px;
+    text-emphasis: 10;
+    line-height: 1.4;
+}
+
+.about-me-section p{
+    line-height: 1.2;
+}
+
+
+
+
 
 
