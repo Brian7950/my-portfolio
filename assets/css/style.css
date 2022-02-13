@@ -40,6 +40,9 @@ header nav ul li a{
 
 body{
     background-color: #444444;
+    background-image: url("../images/header-dev.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* About me section strip*/
@@ -49,6 +52,7 @@ body{
     width: 100%;
     justify-content: flex-start;
     color:var(--primaryFont-color);
+    margin-bottom: 50px;
 }
 
 .my-pic{
@@ -67,7 +71,7 @@ body{
 }
 
 /*general use for headers*/
-.title{
+.title-section{
     text-shadow: 5px 4px 5px rgba(153, 152, 152, 0.8);
     padding:5px;
     border-bottom: 1px solid whitesmoke;
@@ -100,6 +104,74 @@ body{
 .about-me-section p{
     line-height: 1.2;
 }
+/*end of about me section*/
+
+.my-work-parent{
+    position: relative;
+    background-color: rgb(197, 197, 197);
+}
+
+.my-work h2{
+    text-align: center;
+    align-items:center;
+    padding-top:40px;
+}
+
+.my-work-div{
+    width: 15%;
+    padding-top:70px;
+    padding-bottom: 20px;
+}
+
+/*All projects container*/
+.hover-section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*before hover*/
+.hover-project-container{
+    width: 30%;
+    height: 25%;
+    margin: 25px;
+
+}
+
+.hover-project-container img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    overflow: auto;
+}
+
+/*hovering over projects*/
+.hover-project-container:hover{
+    transform:scale(1.6);
+    padding: 10px;
+    border: 2px solid black;
+    opacity: .95;
+    box-shadow: 5px 3px 6px rgba(153, 152, 152, 0.8);
+    background-color: black;
+    z-index: 5;
+    
+}
+
+.hover-project-container h3:after {
+    text-align: center;
+    text-shadow: 5px 4px 5px rgba(153, 152, 152, 0.8);
+    color: whitesmoke;
+}
+
+.hover-project-container img:hover {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100% ;
+}
+
 
 
 
