@@ -39,7 +39,7 @@ header nav ul li a{
 }
 
 body{
-    background-color: #444444;
+    background-color:black;
     background-image: url("../images/header-dev.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -75,6 +75,11 @@ body{
     text-shadow: 5px 4px 5px rgba(153, 152, 152, 0.8);
     padding:5px;
     border-bottom: 1px solid whitesmoke;
+}
+
+.middle-title-section{
+    text-shadow: 5px 4px 10px rgba(0, 0, 0, 0.8);
+    padding:5px;
 }
 
 /*about me block*/
@@ -119,8 +124,12 @@ body{
 
 .my-work-div{
     width: 15%;
-    padding-top:70px;
-    padding-bottom: 20px;
+    padding-top:30px;
+    margin-bottom: 50px;
+    margin:auto;
+    text-shadow: 4px 5px rgb(96 96 96 / 80%);
+    text-align: center;
+    border-bottom: solid black 1px;
 }
 
 /*All projects container*/
@@ -171,6 +180,115 @@ body{
     min-width: 100%;
     min-height: 100% ;
 }
+
+/*contact me section*/
+.contact-section{
+    display:flex;
+    align-items:center; /*aligns vertical with flexbox */
+    height:200px;
+    color: var(--primaryFont-color);
+    padding-left:20px;
+}
+
+.my-contact{
+    justify-content: end;
+    margin-left: 5%;
+    line-height: 1.7;
+}
+
+.my-contact a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*MEDIA QUERY FOR DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width:980px){
+    /*screens smaller than 980px will be effected by this*/
+    body{
+        background-position-x: center;
+        background-repeat:repeat;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */ 
+@media screen and (max-width: 768px){
+    /*screens smaller than 768px will be effected by this*/
+    * {
+        font-size:larger;
+    }
+     
+    header{
+        font-size: medium;
+    }
+
+    .me-section{
+        flex: 1 100%;
+        text-align: center;
+        padding-bottom: 80%;
+    }
+}
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width:575px){
+     /*screens smaller than 575px will be effected by this*/
+     body{
+         background-image:none;
+         background-color: black;
+     }
+
+     header{
+        width:100%;
+        align-items: flex-start;
+     }
+
+     nav{
+         text-align: center;
+    }
+
+    .my-pic{
+        margin:auto;
+        border:none;
+        border-bottom: 1px solid white;
+    }
+
+    .about-me-section{
+        text-align: center;
+        height: 270px;
+        margin:auto;
+    }
+
+    .about-me-section h2{
+        width: 100%;
+        border:none;
+        padding-right: 60px;
+    }
+
+    .about-me-section p{
+        line-height: .9;
+        width: 100%;
+    }
+
+    .my-work-div{
+        width:100%;
+        border-bottom: 1px solid black;
+        margin:auto;
+    }
+
+    .hover-section div h3{
+        font-size: medium;
+    }
+
+    /*contact me section*/
+    .contact-section h2{
+        text-align: center;
+    }
+
+    .my-contact{
+        font-size: large;
+    }
+
+}
+
 
 
 
